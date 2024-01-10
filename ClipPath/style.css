@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.content {
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+    /* clip-path: circle(50%); */
+    /* clip-path: circle(100%); */
+    /* clip-path: circle(50% at 0 0); */
+    /* clip-path: polygon(13% 22%, 11% 59%, 54% 78%); */
+    transition: all 2s ease;
+}
+.content:hover {
+    clip-path: circle(100%);
+}
