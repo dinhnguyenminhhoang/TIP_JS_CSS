@@ -1,16 +1,31 @@
 import React, { useEffect, useState } from "react";
 
 function ClearmUpfc() {
-    const [user, setUser] = useState();
-    const [id, setId] = useState();
+    const [user, setUser] = useState({});
+    const [id, setId] = useState(1);
     useEffect(() => {
-        fetch(`https://jsonplaceholder.tyicode.com/users/${id}`);
-    });
+        // fetch(`https://jsonplaceholder.typicode.com/users/${id}`).then((res) =>
+        //     res.json().then((data) => {
+        //         console.log("cancelled");
+        //         setUser(data);
+        //     })
+        // );
+        // call call fix
+        let cancelledRes = false;
+        fetch(`https://jsonplaceholder.typicode.com/users/${id}`).then((res) =>
+            res.json().then((data) => {
+                if (!cancelledRes) setUser(data);
+            })
+        );
+        return () => {
+            cancelledRes = true;
+        };
+    }, [id]);
     return (
         <div>
             <div>
-                <p>{user.name}</p>
-                <p>{user.email}</p>
+                <p>{user?.name}</p>
+                <p>{user?.email}</p>
             </div>
             <div>
                 <button

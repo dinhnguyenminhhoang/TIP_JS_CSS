@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import ClearmUpfc from "./ClearmUpfc";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -16,15 +17,7 @@ function App() {
     }, [count2]);
     return (
         <div className="App">
-            <div style={{ marginTop: 100 }}>
-                <span>Click me now ! {count2}</span>
-                <button
-                    style={{ padding: 10, borderWidth: 1 }}
-                    onClick={() => setCount2(count2 + 1)}
-                >
-                    increase
-                </button>
-            </div>
+            <ClearmUpfc />
         </div>
     );
 }
