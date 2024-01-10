@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.player {
+    width: 100%;
+    /* height: 500px; */
+    background-color: black;
+    aspect-ratio: 16/2;
+}
