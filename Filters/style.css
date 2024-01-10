@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+img {
+    /* filter: blur(10px); */
+    /* filter: blur(20px); */
+    /* filter: brightness(400%); */
+    /* filter: contrast(200%); */
+    /* filter: grayscale(70%); */
+    /* filter: saturate(200%); */
+}
+img:active {
+    filter: none;
+}
