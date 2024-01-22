@@ -1,0 +1,5 @@
+- hash fn bắm bufer or ojId thành integer
+req 1,2             hash ip = 0 server a
+            loader   hash ip = 1 server b
+req 2,3             hash ip = 3 server c
+vd web có 3 server, lấy ip người dùng băm nếu 1 thì đưa vào a tương tự cho các serevr khác

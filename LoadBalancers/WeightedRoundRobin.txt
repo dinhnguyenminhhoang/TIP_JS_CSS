@@ -1,0 +1,5 @@
+- sử dụng trọng số để phân phối yêu cầu lên máy chủ
+size : 1 -> server a
+size : 1.5 -> server b
+size : 1.89 -> server c
+-> giúp máy chủ nào lơn sẽ nhận được nhiều truy cập hơn

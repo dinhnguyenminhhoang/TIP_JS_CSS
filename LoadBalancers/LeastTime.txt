@@ -1,0 +1,3 @@
+- phân phối lưu luongwngj cho từng server cho phản hồi
+- xem server nào sử lí nhanh hơn thì đưa vào server đó 
+-> áp dụng ở ytb giúp người dùng nhận được phản hồi nhanh nhất

@@ -1,0 +1,7 @@
+- phân bổ các tài nguyên, thực thể theo 1 cách tuần hoàn lần lượt cho đến khi tất cả đều được phản hồi và quạy lại ban đầu
+Vd: xoay vòng bảng trong bóng đá
+1,2             req 4, 1 -> server a
+        loader  req 2   ->server b
+3,4             req 3   ->server c
+
+-> nhược điểm : phải chia section 
