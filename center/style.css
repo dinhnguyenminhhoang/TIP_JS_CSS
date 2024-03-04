@@ -1,0 +1,31 @@
+/* .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: brown;
+} */
+.parent {
+    /* using grid */
+    background-color: black;
+    border: 2px solid white;
+    display: grid;
+    place-items: center;
+    width: 800px;
+    height: 800px;
+}
+.wrapper {
+    border: 2px solid white;
+    color: white;
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper p {
+    color: #000;
+}
