@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Document</title>
+    </head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 100vh;
+        }
+
+        .imgView {
+            filter: grayscale(100%);
+            transition: filter linear 0.5s;
+        }
+        .imgView:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1 style="color: aqua; margin-bottom: 20px">Gray scale css</h1>
+            <img
+                src="https://i.pinimg.com/564x/6f/ab/aa/6fabaa14dcf67b347633b72bc560c963.jpg"
+                alt="img"
+                class="imgView"
+                width="300"
+                height="300"
+            />
+            <div
+                style="
+                    border: 1px;
+                    border-color: #ddd;
+                    border-style: solid;
+                    width: 600px;
+                    height: 300px;
+                    margin-top: 40px;
+                    border-radius: 10px;
+                "
+            >
+                fds
+            </div>
+        </div>
+    </body>
+</html>
