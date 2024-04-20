@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 1);
+            gap: 8;
+        }
+        .btn {
+            display: grid;
+            place-items: center;
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            background: #222;
+            border: none;
+            position: relative;
+            border-radius: 10px;
+            cursor: pointer;
+            color: aliceblue;
+        }
+        .icon {
+            color: rgba(254, 254, 254, 0.1);
+            font-size: 35px;
+            z-index: 10;
+        }
+        .animate1::before {
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 200px;
+            background: coral;
+            z-index: -1;
+            transition: 0.2s;
+            animation: animate 2s linear infinite;
+            border-radius: 15px;
+        }
+        .animate1:hover::before {
+            width: 212px;
+            height: 208px;
+        }
+        .animate2 {
+            overflow: hidden;
+        }
+        .animate2::before {
+            position: absolute;
+            content: "";
+            width: 50%;
+            height: 180%;
+            background: #fff;
+            transform: rotate(45deg);
+            border-radius: 8px;
+        }
+        .animate2:hover::before {
+            animation: spiner 1s linear infinite;
+        }
+        .animate2::after {
+            position: absolute;
+            content: "";
+            inset: 6px;
+            background-color: #222;
+        }
+        @keyframes animate {
+            50% {
+                filter: hue-rotate(350deg);
+            }
+        }
+        @keyframes spiner {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <body>
+        <button class="btn animate1"><i class="fa fa-car icon"></i></button>
+        <button class="btn animate2"><i class="fa fa-car icon"></i></button>
+    </body>
+</html>
